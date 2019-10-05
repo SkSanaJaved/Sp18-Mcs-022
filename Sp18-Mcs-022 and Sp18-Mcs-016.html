@@ -14,14 +14,14 @@
 				});
 				Object.defineProperty(this,'display',{
 					value:function(){
-						document.write("Name: ",this.name,"<br>");
-						document.write("Age: ",this.age,"<br>");
-						document.write("Semester: ",this.semester,"<br>");
-						document.write("Program: ",this.program,"<br>");
-						document.write("------------------<br>");
+						console.log("Name: ",this.name);
+						console.log("Age: ",this.age);
+						console.log("Semester: ",this.semester);
+						console.log("Program: ",this.program);
+						console.log("-----------------");
 					}
 				});
-			}
+			} 
 		}
 		function findValue(stdArray) {
 			userValue = prompt("Enter Value");
@@ -29,13 +29,13 @@
 				for(ii in stdArray[i]){
 
 					if(userValue == stdArray[i][ii]){
-						document.write("Value found ",stdArray[i][ii],"<br>");
+						console.log("Value found ",stdArray[i][ii]);
 						return;
 					}
 
 				}
 			}
-			document.write("Not Found");
+			console.log("Not Found");
 
 		}
 
